@@ -1,3 +1,5 @@
+#Just launch the camera faster that prog_1
+
 import cv2
 
 cam = cv2.VideoCapture(0)
