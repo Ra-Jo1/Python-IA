@@ -1,13 +1,16 @@
+#This program use function to detect 2 hands, version of python 3.14.3, cv2 4.13.0 and mediapipe 0.10.33
 
 import time  # used to generate timestamps for video frames
-
 import cv2  # OpenCV for camera capture and display
+import mediapipe as mp
+
 from mediapipe.tasks.python.core import base_options  # MediaPipe task base option handling
 from mediapipe.tasks.python.vision.core import vision_task_running_mode  # Running mode enum for MediaPipe vision tasks
 from mediapipe.tasks.python.vision import hand_landmarker  # Hand landmarker task API
 from mediapipe.tasks.python.vision.core import image as mp_image  # Image wrapper used by MediaPipe tasks
 
 print(cv2.__version__)  # print OpenCV version for debugging
+print(mp.__version__)
 
 MODEL_PATH = "hand_landmarker.task"  # Path to the MediaPipe hand landmarker model file
 width = 1280  # desired capture width
