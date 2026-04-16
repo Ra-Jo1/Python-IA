@@ -23,8 +23,8 @@ while True:
         x,y,w,h = face #face wait 4 parameters
         cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),3)
     
-    cv2.imshow("TheEnginneer",frame)
-    cv2.moveWindow("TheEnginneer",0,0)
+    cv2.imshow("Yo_world",frame)
+    cv2.moveWindow("Yo_world",0,0)
 
     if cv2.waitKey(1) & 0xff == ord('q'):
         break
