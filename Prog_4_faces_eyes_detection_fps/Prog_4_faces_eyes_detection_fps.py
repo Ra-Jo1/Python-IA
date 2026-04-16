@@ -43,8 +43,8 @@ while True:
     fps = .9*fps + .1*fpsnew
     cv2.putText(frame,"FPS: "+str(int(fpsnew)),(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2)
     
-    cv2.imshow("TheEnginneer",frame)
-    cv2.moveWindow("TheEnginneer",0,0)
+    cv2.imshow("Yo_world",frame)
+    cv2.moveWindow("Yo_world",0,0)
 
     if cv2.waitKey(1) & 0xff == ord('q'):
         break
